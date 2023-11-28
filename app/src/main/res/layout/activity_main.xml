@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Mehraneh - 30062786 - AT2- Practical-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- First Part - User Data Entry -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="1"
+        android:padding="16dp"
+        android:layout_margin="10dp">
+
+        <!-- EditText to enter ID -->
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter ID for update and delete"
+            android:textSize="20sp" />
+        <!-- Edit text to enter name -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Full Name"
+            android:textSize="20sp" />
+        <!-- Edit text to enter mobile -->
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Mobile"
+            android:textSize="20sp" />
+        <!-- Edit text to enter email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Email"
+            android:textSize="20sp" />
+    </GridLayout>
+
+    <!-- Second Part - Buttons for CRUD Operations -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_margin="4dp">
+        <!-- Button to Insert-->
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Insert"
+            android:textSize="19sp" />
+        <!-- Button to update-->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:text="Update(ID)"
+            android:textSize="19sp" />
+        <!-- Button to delete-->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Delete(ID)"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+        <!-- Button to search-->
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:text="Search by Name"
+            android:textSize="19sp" />
+        <!-- Button to print-->
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Print"
+            android:textSize="19sp" />
+    </LinearLayout>
+    <!-- Third Part - Text view for displaying the customer's detail-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvCustomerRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:text="Customers:\n"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                />
+        </ScrollView>
+    </LinearLayout>
+    <!-- Third Part - Displaying Results in TableLayout -->
+</LinearLayout>
