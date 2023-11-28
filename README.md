@@ -1,24 +1,44 @@
 # CustomerManagement
-a customer search program
-• Develop a text-based program that provides sort and search options in Kotlin
-o Define Customer class:
- The Customer class has 4 class variables: id, name, email and mobile
- This class is in a sub-package named objects
-o Create 5 Customer objects in a collection data structure, e.g. ArrayList
-o The program shows the original (unsorted) customers’ information
-o The program offers customers sort and search options
- Provide sort options by name
-• Use any sortXX() methods of Kotlin’s collection types
- Provide search options by name, email or mobile
-• Full or part of details can be used for search
-o E.g. “Jone” can find “David Jones”
-o Multiple search results can be found
-o The program has an option to save the Customer objects in a binary file
- Name the binary file as customers.dat
-o The program has an option to reads the customers object from the binary file and to display 
-the customer contents on the screen
-o Design your own user interaction menu
- The UI of your program will be text-based
-o Identify possible runtime errors, and improve program stability by using exception-handling 
-techniques
-o Save the main program file as CustomerSortAndSearch
+A customer management Android mobile app with database
+• Your app performs below:
+o Your application will access a database named smtbiz
+ This database has one table named customer
+o The customer table has 4 fields: Id, Name, Email and Mobile.
+ID Name Email Mobile
+6 digits customer no.
+E.g. 123456
+Primary Key
+Full name.
+E.g. John Citizen
+o Your app provides an option to reset the table with 5 records
+ This option will be used when your program runs for the first time or when it needs to 
+reset the table with 5 records
+o Your app will provide options to perform CRUD database operations
+ Insert a new customer.
+• No validity check is required
+o E.g. wrong format of email or mobile can be accepted
+ Delete an existing customer by ID
+ Search for a customer by name
+• If the customer is not found, the app shows a friendly message
+o E.g. Android’Toast or Snackbar
+ Show all customers
+• Display all customers
+• Implement the Customer model class
+ Update a customer’s info
+• A record found by ID is updated with the other details provided
+o Implement DB transaction integrity with the transaction methods of SQLiteDatabase class
+o Determine and document program requirements according to object-oriented programming 
+specifications
+ Save and name your requirements document as “Programming Requirements.”
+o Design your own GUI
+o Save your app project as CustomerManagement
+• Demonstrate the use of Debugger and Profiler tools of Android Studio IDE
+o Show how you used the Debugger tool
+ Demonstrate variables examination and tracing running code
+ Demonstrate how the tools help process of development and increase the productivity
+ Write a test procedure and test document for test execution
+ Provide a test report according to test results. Use the test report template provided
+o Show how you used the Profiler tool
+ Analyse the performance of your app document any issues and improvement of 
+performance
+ Provide an evidence of improvement, e.g different version
